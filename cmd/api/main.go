@@ -23,7 +23,7 @@ func main (){
 		w.Header().Set("Content-Type", "aplication/json")
 		w.WriteHeader(http.statusOK)
 		json.NewEncoder(w).Encode(map[string]string{
-			"status": "healty",
+			"status" : "healty",
 			"service": "clothify-go-api"
 		})
 
